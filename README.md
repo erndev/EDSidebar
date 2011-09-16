@@ -3,8 +3,7 @@ EDSideBar
 
 Attemp to create a Sidebar in ObjectiveC/Cocoa like those seen in apps like Sparrow Mail, Twitter or Github for Mac.
 
-  - Type Markdown text in the left window
-  - See the HTML in the right
+
 
 ### Screenshot
 
