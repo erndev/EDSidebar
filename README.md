@@ -6,7 +6,7 @@ Attemp to create a Sidebar in ObjectiveC/Cocoa like those seen in apps like Spar
   - Type Markdown text in the left window
   - See the HTML in the right
 
-### License
+### Screenshot
 
 ![EDSideBar](https://github.com/erndev/EDSidebar/raw/master/screenshot.png)
 
