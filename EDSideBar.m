@@ -23,7 +23,7 @@
 {
     NSMutableAttributedString *attrTitle = [[NSMutableAttributedString alloc]
 											initWithAttributedString:[self attributedTitle]];
-    int len = [attrTitle length];
+    NSUInteger len = [attrTitle length];
     NSRange range = NSMakeRange(0, len);
     [attrTitle addAttribute:NSForegroundColorAttributeName
                       value:textColor

@@ -49,9 +49,9 @@ typedef NSUInteger ECSideBarLayoutMode;
 
 @property (nonatomic,retain) NSColor *backgroundColor;
 @property (nonatomic,retain) id<EDSideBarDelegate>sidebarDelegate;
-@property (setter=setCellClass) Class cellClass;
-@property (setter=setLayoutMode) ECSideBarLayoutMode layoutMode;
-@property (setter=setButtonsHeight) CGFloat buttonsHeight;
+@property (nonatomic,retain,setter=setCellClass:) Class cellClass;
+@property (setter=setLayoutMode:) ECSideBarLayoutMode layoutMode;
+@property (setter=setButtonsHeight:) CGFloat buttonsHeight;
 @property BOOL animateSelection;
 @property NSTimeInterval animationDuration;
 @end

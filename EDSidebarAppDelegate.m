@@ -43,7 +43,6 @@
 	[sideBarDefault setLayoutMode:ECSideBarLayoutTop];
 	sideBarDefault.animateSelection =YES;
 	sideBarDefault.sidebarDelegate=self;
-	[sideBarDefault setSelectionImage:[NSImage imageNamed:@"current-selection.png"]];
 	NSImage *selImage =[self buildSelectionImage];
 	[sideBarDefault setSelectionImage:selImage];
 	[selImage release];
