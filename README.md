@@ -11,7 +11,7 @@ Attemp to create a Sidebar in ObjectiveC/Cocoa like those seen in apps like Spar
 
 ### License
 BSD License.
-Copyright (c) 2011, Ernesto Garc√≠a
+Copyright (c) 2011, Ernesto García
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -35,3 +35,11 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+### SideBar Icon License
+The sidebar icon in the sample project belongs to [IconSweets](http://www.yummygum.nl) icon collection.
+
+Copyright © 2010 Yummygum.
+
+You may use these icons for both commercial and for 
+personal use and customize them any way you like.
