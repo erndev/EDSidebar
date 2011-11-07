@@ -10,7 +10,13 @@
 
 @class EDSideBar;
 
-
+#if __has_feature(objc_arc)	
+#define EDSideBarRetain nonatomic, strong
+#define EDSideBarAssign nonatomic, unsafe_unretained
+#else
+#define EDSideBarRetain nonatomic, retain
+#define EDSideBarAssign nonatomic, assign
+#endif
 
 @protocol EDSideBarDelegate <NSObject>
 @required
@@ -47,11 +53,11 @@ typedef NSUInteger ECSideBarLayoutMode;
 -(void)setSelectionImage:(NSImage*)image;
 -(id)cellForItem:(NSInteger)index;
 
-@property (nonatomic,retain) NSColor *backgroundColor;
-@property (nonatomic,retain) id<EDSideBarDelegate>sidebarDelegate;
-@property (nonatomic,retain,setter=setCellClass:) Class cellClass;
-@property (setter=setLayoutMode:) ECSideBarLayoutMode layoutMode;
-@property (setter=setButtonsHeight:) CGFloat buttonsHeight;
+@property (EDSideBarRetain) NSColor *backgroundColor;
+@property (EDSideBarRetain) id<EDSideBarDelegate>sidebarDelegate;
+@property (EDSideBarAssign,setter=setCellClass:) Class cellClass;
+@property (nonatomic, setter=setLayoutMode:) ECSideBarLayoutMode layoutMode;
+@property (nonatomic, setter=setButtonsHeight:) CGFloat buttonsHeight;
 @property BOOL animateSelection;
 @property NSTimeInterval animationDuration;
 @end

@@ -11,6 +11,7 @@
 
 @interface BlackCell : NSButtonCell {
 
+    NSShadow *_shadow;
 }
 
 @end

@@ -15,7 +15,7 @@ EDSidebar.xcodeproj/ernesto.mode1v3
 *.xcuserstate
 project.xcworkspace/
 xcuserdata/
-
+DerivedData/
 # Generated files
 *.[oa]
 *.pyc
@@ -29,3 +29,4 @@ build/
 
 # Backup files
 *~.nib
+

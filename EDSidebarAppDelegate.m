@@ -69,9 +69,9 @@
 }
 -(void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)button
 {
-	NSString *str = [NSString stringWithFormat:@"Selected button #%d in %@",
+	NSString *str = [NSString stringWithFormat:@"Selected button #%lu in %@",
 					 button, [tabBar isEqualTo:sideBarBlack]?@"Right sidebar":@"Left sidebar"];
-	NSLog(@"Button selected: %d", button );
+	NSLog(@"Button selected: %lu", button );
 	[textField setStringValue:str];
 	
 }

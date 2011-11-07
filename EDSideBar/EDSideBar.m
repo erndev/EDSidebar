@@ -30,7 +30,9 @@
                       range:range];
     [attrTitle fixAttributesInRange:range];
     [self setAttributedTitle:attrTitle];
+#if !__has_feature(objc_arc)
     [attrTitle release];
+#endif
 }
 -(id)init
 {
@@ -111,9 +113,9 @@
 		NSRect rectGradient = NSMakeRect(0-0.5, NSMinY(frame)-1-0.5, NSWidth(frame)-1, 4.0);
 		NSBezierPath *path = [NSBezierPath bezierPathWithRect:rectGradient];
 		[gradient drawInBezierPath:path angle:90];
-		
+#if !__has_feature(objc_arc)		
 		[gradient release];
-		
+#endif		
 	}
 	
 	// Inset in the right
@@ -180,13 +182,14 @@
 	}
     return self;
 }
-
 -(void)dealloc
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
+#if !__has_feature(objc_arc)
 	[_backgroundColor dealloc];
 	[_matrix dealloc];
 	[super dealloc];
+#endif
 }
 
 -(void)drawBackground:(NSRect)rect
@@ -205,8 +208,8 @@
 
 -(void)selectButtonAtRow:(NSUInteger)row
 {
-	int rowToSelect = row;
-	if( row <0 || [_matrix numberOfRows]< row )
+	NSUInteger rowToSelect = row;
+	if(  [_matrix numberOfRows]< row )
 		rowToSelect =0;
 	[_matrix setState:(NSInteger)NSOnState atRow:(NSInteger)rowToSelect column:(NSInteger)0];
 	[self moveSelectionImage];

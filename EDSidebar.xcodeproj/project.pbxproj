@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* EDSidebarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* EDSidebarAppDelegate.m */; };
+		256AC3DA0F4B6AC300CF3369 /* EDSidebarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* EDSidebarAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		94B2BB8C14235019000FACDD /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2BB8B14235019000FACDD /* EDSideBar.m */; };
 		94B2BE9F1423BD86000FACDD /* icon1-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BE9D1423BD86000FACDD /* icon1-white.png */; };
 		94B2BEA01423BD86000FACDD /* icon1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BE9E1423BD86000FACDD /* icon1-gray.png */; };
 		94B2BF231423C272000FACDD /* BlackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2BF221423C272000FACDD /* BlackCell.m */; };
 		94B2BF371423C4BB000FACDD /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BF361423C4BB000FACDD /* blue.png */; };
 		94B2BF431423C574000FACDD /* icon1-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BF421423C574000FACDD /* icon1-blue.png */; };
+		94E699161467F4BD00AFBE8A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699151467F4BD00AFBE8A /* EDSideBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +33,14 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* EDSidebar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EDSidebar-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* EDSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94B2BB8A14235019000FACDD /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
-		94B2BB8B14235019000FACDD /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
 		94B2BE9D1423BD86000FACDD /* icon1-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-white.png"; sourceTree = "<group>"; };
 		94B2BE9E1423BD86000FACDD /* icon1-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-gray.png"; sourceTree = "<group>"; };
 		94B2BF211423C272000FACDD /* BlackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackCell.h; sourceTree = "<group>"; };
 		94B2BF221423C272000FACDD /* BlackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackCell.m; sourceTree = "<group>"; };
 		94B2BF361423C4BB000FACDD /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		94B2BF421423C574000FACDD /* icon1-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-blue.png"; sourceTree = "<group>"; };
+		94E699141467F4BD00AFBE8A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
+		94E699151467F4BD00AFBE8A /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		29B97314FDCFA39411CA2CEA /* EDSidebar */ = {
 			isa = PBXGroup;
 			children = (
-				94B2BB891423500E000FACDD /* Sidebar */,
+				94E699131467F4BD00AFBE8A /* EDSideBar */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -137,13 +137,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		94B2BB891423500E000FACDD /* Sidebar */ = {
+		94E699131467F4BD00AFBE8A /* EDSideBar */ = {
 			isa = PBXGroup;
 			children = (
-				94B2BB8A14235019000FACDD /* EDSideBar.h */,
-				94B2BB8B14235019000FACDD /* EDSideBar.m */,
+				94E699141467F4BD00AFBE8A /* EDSideBar.h */,
+				94E699151467F4BD00AFBE8A /* EDSideBar.m */,
 			);
-			name = Sidebar;
+			path = EDSideBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +214,8 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* EDSidebarAppDelegate.m in Sources */,
-				94B2BB8C14235019000FACDD /* EDSideBar.m in Sources */,
 				94B2BF231423C272000FACDD /* BlackCell.m in Sources */,
+				94E699161467F4BD00AFBE8A /* EDSideBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -252,8 +253,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = EDSidebar_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EDSidebar-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = EDSidebar;
 			};
 			name = Debug;
@@ -262,12 +265,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = EDSidebar_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EDSidebar-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = EDSidebar;
 			};
 			name = Release;
@@ -282,7 +288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -294,7 +300,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
