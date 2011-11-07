@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* EDSidebarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* EDSidebarAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		94B2BE9F1423BD86000FACDD /* icon1-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BE9D1423BD86000FACDD /* icon1-white.png */; };
-		94B2BEA01423BD86000FACDD /* icon1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BE9E1423BD86000FACDD /* icon1-gray.png */; };
-		94B2BF231423C272000FACDD /* BlackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2BF221423C272000FACDD /* BlackCell.m */; };
-		94B2BF371423C4BB000FACDD /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BF361423C4BB000FACDD /* blue.png */; };
-		94B2BF431423C574000FACDD /* icon1-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B2BF421423C574000FACDD /* icon1-blue.png */; };
 		94E699161467F4BD00AFBE8A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699151467F4BD00AFBE8A /* EDSideBar.m */; };
+		94E6991B1467F5D300AFBE8A /* BlackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699181467F5D300AFBE8A /* BlackCell.m */; };
+		94E6991C1467F5D300AFBE8A /* EDSidebarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E6991A1467F5D300AFBE8A /* EDSidebarAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		94E699211467F64C00AFBE8A /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E6991D1467F64C00AFBE8A /* blue.png */; };
+		94E699221467F64C00AFBE8A /* icon1-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E6991E1467F64C00AFBE8A /* icon1-blue.png */; };
+		94E699231467F64C00AFBE8A /* icon1-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E6991F1467F64C00AFBE8A /* icon1-gray.png */; };
+		94E699241467F64C00AFBE8A /* icon1-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E699201467F64C00AFBE8A /* icon1-white.png */; };
+		94E699281467F66D00AFBE8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699271467F66D00AFBE8A /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,22 +25,22 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3D80F4B6AC300CF3369 /* EDSidebarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSidebarAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* EDSidebarAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSidebarAppDelegate.m; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* EDSidebar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSidebar_Prefix.pch; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8D1107310486CEB800E47090 /* EDSidebar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EDSidebar-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* EDSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94B2BE9D1423BD86000FACDD /* icon1-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-white.png"; sourceTree = "<group>"; };
-		94B2BE9E1423BD86000FACDD /* icon1-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-gray.png"; sourceTree = "<group>"; };
-		94B2BF211423C272000FACDD /* BlackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackCell.h; sourceTree = "<group>"; };
-		94B2BF221423C272000FACDD /* BlackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackCell.m; sourceTree = "<group>"; };
-		94B2BF361423C4BB000FACDD /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
-		94B2BF421423C574000FACDD /* icon1-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-blue.png"; sourceTree = "<group>"; };
 		94E699141467F4BD00AFBE8A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
 		94E699151467F4BD00AFBE8A /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
+		94E699171467F5D300AFBE8A /* BlackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlackCell.h; path = Sample/BlackCell.h; sourceTree = "<group>"; };
+		94E699181467F5D300AFBE8A /* BlackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlackCell.m; path = Sample/BlackCell.m; sourceTree = "<group>"; };
+		94E699191467F5D300AFBE8A /* EDSidebarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EDSidebarAppDelegate.h; path = Sample/EDSidebarAppDelegate.h; sourceTree = "<group>"; };
+		94E6991A1467F5D300AFBE8A /* EDSidebarAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EDSidebarAppDelegate.m; path = Sample/EDSidebarAppDelegate.m; sourceTree = "<group>"; };
+		94E6991D1467F64C00AFBE8A /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = images/blue.png; sourceTree = "<group>"; };
+		94E6991E1467F64C00AFBE8A /* icon1-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon1-blue.png"; path = "images/icon1-blue.png"; sourceTree = "<group>"; };
+		94E6991F1467F64C00AFBE8A /* icon1-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon1-gray.png"; path = "images/icon1-gray.png"; sourceTree = "<group>"; };
+		94E699201467F64C00AFBE8A /* icon1-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon1-white.png"; path = "images/icon1-white.png"; sourceTree = "<group>"; };
+		94E699271467F66D00AFBE8A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sample/main.m; sourceTree = "<group>"; };
+		94E6992A1467F70500AFBE8A /* EDSidebar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EDSidebar-Info.plist"; sourceTree = "<group>"; };
+		94E6992D1467F8C300AFBE8A /* EDSidebar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSidebar_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3D80F4B6AC300CF3369 /* EDSidebarAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* EDSidebarAppDelegate.m */,
-				94B2BF211423C272000FACDD /* BlackCell.h */,
-				94B2BF221423C272000FACDD /* BlackCell.m */,
+				94E699171467F5D300AFBE8A /* BlackCell.h */,
+				94E699181467F5D300AFBE8A /* BlackCell.m */,
+				94E699191467F5D300AFBE8A /* EDSidebarAppDelegate.h */,
+				94E6991A1467F5D300AFBE8A /* EDSidebarAppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3F00F4B6AF500CF3369 /* EDSidebar_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				94E6992D1467F8C300AFBE8A /* EDSidebar_Prefix.pch */,
+				94E699271467F66D00AFBE8A /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -117,11 +117,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				94B2BF421423C574000FACDD /* icon1-blue.png */,
-				94B2BF361423C4BB000FACDD /* blue.png */,
-				94B2BE9D1423BD86000FACDD /* icon1-white.png */,
-				94B2BE9E1423BD86000FACDD /* icon1-gray.png */,
-				8D1107310486CEB800E47090 /* EDSidebar-Info.plist */,
+				94E6992A1467F70500AFBE8A /* EDSidebar-Info.plist */,
+				94E6991D1467F64C00AFBE8A /* blue.png */,
+				94E6991E1467F64C00AFBE8A /* icon1-blue.png */,
+				94E6991F1467F64C00AFBE8A /* icon1-gray.png */,
+				94E699201467F64C00AFBE8A /* icon1-white.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -198,10 +198,10 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				94B2BE9F1423BD86000FACDD /* icon1-white.png in Resources */,
-				94B2BEA01423BD86000FACDD /* icon1-gray.png in Resources */,
-				94B2BF371423C4BB000FACDD /* blue.png in Resources */,
-				94B2BF431423C574000FACDD /* icon1-blue.png in Resources */,
+				94E699211467F64C00AFBE8A /* blue.png in Resources */,
+				94E699221467F64C00AFBE8A /* icon1-blue.png in Resources */,
+				94E699231467F64C00AFBE8A /* icon1-gray.png in Resources */,
+				94E699241467F64C00AFBE8A /* icon1-white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* EDSidebarAppDelegate.m in Sources */,
-				94B2BF231423C272000FACDD /* BlackCell.m in Sources */,
 				94E699161467F4BD00AFBE8A /* EDSideBar.m in Sources */,
+				94E6991B1467F5D300AFBE8A /* BlackCell.m in Sources */,
+				94E6991C1467F5D300AFBE8A /* EDSidebarAppDelegate.m in Sources */,
+				94E699281467F66D00AFBE8A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +284,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -297,9 +299,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
