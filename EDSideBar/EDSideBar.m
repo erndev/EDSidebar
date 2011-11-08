@@ -5,6 +5,7 @@
 //  BSD license. 
 //
 #import "EDSideBar.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define ED_DEFAULT_BUTTON_HEIGHT	60.0
 #define ED_DEFAULT_ANIM_DURATION	0.15
@@ -155,6 +156,7 @@
 @synthesize cellClass;
 @synthesize animateSelection;
 @synthesize animationDuration;
+@synthesize noiseAlpha;
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
@@ -196,7 +198,22 @@
 {
 	[_backgroundColor set];
 	NSRectFill(rect);
-	
+	if( self.noiseAlpha > 0 )
+    {
+        static CIImage *noisePattern = nil;
+        if(noisePattern == nil){
+            CIFilter *randomGenerator = [CIFilter filterWithName:@"CIColorMonochrome"];
+            [randomGenerator setValue:[[CIFilter filterWithName:@"CIRandomGenerator"] valueForKey:@"outputImage"]
+                               forKey:@"inputImage"];
+            [randomGenerator setDefaults];
+            noisePattern = [randomGenerator valueForKey:@"outputImage"];
+#if !__has_feature(objc_arc)
+            [noisePattern  retain];
+#endif
+        }
+        [noisePattern drawAtPoint:NSZeroPoint fromRect:self.bounds operation:NSCompositePlusLighter fraction:noiseAlpha];
+        
+    }
 }
 
 

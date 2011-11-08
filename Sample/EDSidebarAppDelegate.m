@@ -50,7 +50,10 @@
 	[sideBarDefault addButtonWithTitle:@"Button 2" image:[NSImage imageNamed:@"icon1-white.png"] alternateImage:[NSImage imageNamed:@"icon1-gray.png"]];
 	[sideBarDefault addButtonWithTitle:@"Button 3" image:[NSImage imageNamed:@"icon1-white.png"] alternateImage:[NSImage imageNamed:@"icon1-gray.png"]];
 	[sideBarDefault selectButtonAtRow:2];
-	
+	// Add a bit of noise texture
+    sideBarDefault.noiseAlpha=0.04;
+    
+    
 	// Setup sidebar with blackCell (BlackCell)
 	// Buttons centered. Selection is not animated
 	sideBarBlack.backgroundColor = [NSColor blackColor];
@@ -63,6 +66,7 @@
 	[sideBarBlack addButtonWithTitle:@"Btn2" image:[NSImage imageNamed:@"icon1-blue.png"] alternateImage:[NSImage imageNamed:@"icon1-gray.png"]];
 	[sideBarBlack addButtonWithTitle:@"Btn3" image:[NSImage imageNamed:@"icon1-blue.png"] alternateImage:[NSImage imageNamed:@"icon1-gray.png"]];
 	[sideBarBlack selectButtonAtRow:0];
+
 }
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 

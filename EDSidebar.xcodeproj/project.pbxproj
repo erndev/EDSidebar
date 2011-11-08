@@ -10,6 +10,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		944DD9FD146997580080307B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944DD9FC146997580080307B /* QuartzCore.framework */; };
 		94E699161467F4BD00AFBE8A /* EDSideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699151467F4BD00AFBE8A /* EDSideBar.m */; };
 		94E6991B1467F5D300AFBE8A /* BlackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E699181467F5D300AFBE8A /* BlackCell.m */; };
 		94E6991C1467F5D300AFBE8A /* EDSidebarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E6991A1467F5D300AFBE8A /* EDSidebarAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -28,6 +29,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107320486CEB800E47090 /* EDSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		944DD9FC146997580080307B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		94E699141467F4BD00AFBE8A /* EDSideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSideBar.h; sourceTree = "<group>"; };
 		94E699151467F4BD00AFBE8A /* EDSideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSideBar.m; sourceTree = "<group>"; };
 		94E699171467F5D300AFBE8A /* BlackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlackCell.h; path = Sample/BlackCell.h; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944DD9FD146997580080307B /* QuartzCore.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		29B97314FDCFA39411CA2CEA /* EDSidebar */ = {
 			isa = PBXGroup;
 			children = (
+				944DD9FC146997580080307B /* QuartzCore.framework */,
 				94E699131467F4BD00AFBE8A /* EDSideBar */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,

@@ -60,4 +60,5 @@ typedef NSUInteger ECSideBarLayoutMode;
 @property (nonatomic, setter=setButtonsHeight:) CGFloat buttonsHeight;
 @property BOOL animateSelection;
 @property NSTimeInterval animationDuration;
+@property CGFloat noiseAlpha;   
 @end
