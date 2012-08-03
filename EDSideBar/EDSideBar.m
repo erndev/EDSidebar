@@ -353,6 +353,7 @@
 	[cell setButtonType:NSPushOnPushOffButton];
 	[cell setTarget:self];
 	[cell setAction:@selector(buttonClicked:)];
+	[cell setFocusRingType:NSFocusRingTypeNone];
 	
 	[self resizeMatrix];
 	return cell;
