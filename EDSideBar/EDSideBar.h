@@ -19,7 +19,7 @@
 #endif
 
 @protocol EDSideBarDelegate <NSObject>
-@required
+@optional
 - (void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)index;
 @end
 
