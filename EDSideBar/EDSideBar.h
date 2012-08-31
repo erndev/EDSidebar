@@ -22,6 +22,7 @@
 @required
 - (void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)index;
 @end
+
 enum {
 	ECSideBarLayoutTop			= 0,
 	ECSideBarLayoutCenter		= 1,
@@ -29,10 +30,8 @@ enum {
 };	
 typedef NSUInteger ECSideBarLayoutMode;
 
-@interface EDSideBar : NSView {
-
-
-
+@interface EDSideBar : NSView
+{
 	ECSideBarLayoutMode layoutMode;
 	NSColor *_backgroundColor;
 	CGFloat	buttonsHeight;
@@ -48,10 +47,12 @@ typedef NSUInteger ECSideBarLayoutMode;
 -(void)addButtonWithTitle:(NSString*)title;
 -(void)addButtonWithTitle:(NSString*)title image:(NSImage*)image;
 -(void)addButtonWithTitle:(NSString*)title image:(NSImage*)image alternateImage:(NSImage*)alternateImage;
+-(void)setTarget:(id)aTarget withSelector:(SEL)aSelector atIndex:(NSInteger)anIndex;
 -(void)selectButtonAtRow:(NSUInteger)row;
 -(void)drawBackground:(NSRect)rect;
 -(void)setSelectionImage:(NSImage*)image;
 -(id)cellForItem:(NSInteger)index;
+-(NSInteger)selectedIndex;
 
 @property (EDSideBarRetain) NSColor *backgroundColor;
 @property (EDSideBarRetain) id<EDSideBarDelegate>sidebarDelegate;

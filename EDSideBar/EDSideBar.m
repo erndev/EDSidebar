@@ -16,10 +16,17 @@
 {
 	
 }
+@property (EDSideBarRetain) id realTarget;
+@property (EDSideBarAssign) SEL realAction;
 @end
+
 #pragma mark -
 #pragma mark ECSideBarButtonCell Implementation 
+
 @implementation ECSideBarButtonCell
+@synthesize realTarget;
+@synthesize realAction;
+
 - (void)setTextColor:(NSColor *)textColor
 {
     NSMutableAttributedString *attrTitle = [[NSMutableAttributedString alloc]
@@ -35,16 +42,17 @@
     [attrTitle release];
 #endif
 }
+
 -(id)init
 {
-	
 	self = [super init];
 	if( self )
 	{
 		[self setTextColor:[NSColor whiteColor]];
 		[self setImagePosition:NSImageAbove];
 		[self setFont:[NSFont fontWithName:@"Lucida Grande" size:11]];
-		
+        self.realTarget = nil;
+        self.realAction = nil;
 	}
 	return self;
 }
@@ -253,11 +261,22 @@
 	[cell setAlternateImage:alternateImage];
 }
 
+-(void)setTarget:(id)aTarget withSelector:(SEL)aSelector atIndex:(NSInteger)anIndex
+{
+    id cell = [_matrix cellAtRow:anIndex column:0];
+    
+    if ([cell isKindOfClass:[ECSideBarButtonCell class]]) {
+        ECSideBarButtonCell *ecCell = (ECSideBarButtonCell *) cell;
+        
+        ecCell.realTarget = aTarget;
+        ecCell.realAction = aSelector;
+    }    
+}
+
 -(void)setCellClass:(Class)class
 {
 	[_matrix setCellClass:class];
 }
-
 
 -(void)setLayoutMode:(ECSideBarLayoutMode)mode
 {
@@ -287,8 +306,8 @@
 	}
 	[selectorImageView setImage:img];
 	[self moveSelectionImage];
-	
 }
+
 -(id)cellForItem:(NSInteger)index
 {
 	if( index <0 || index > [_matrix numberOfRows] )
@@ -300,20 +319,37 @@
 
 -(void)buttonClicked:(id)sender
 {
-	
 	[self moveSelectionImage];
-	if( sidebarDelegate && [sidebarDelegate respondsToSelector:@selector(sideBar:didSelectButton:)] )
-	{
-		NSInteger row = [_matrix selectedRow];
+    
+    NSInteger row = [_matrix selectedRow];
+    id cell = [_matrix cellAtRow:row column:0];
+    
+    if ([cell isKindOfClass:[ECSideBarButtonCell class]]) {
+        ECSideBarButtonCell *ecCell = (ECSideBarButtonCell *) cell;
+        
+        if (ecCell.realTarget && ecCell.realAction) {
+            [ecCell.realTarget performSelector:ecCell.realAction withObject:self];
+            return;
+        }
+    }
+    
+    if( sidebarDelegate && [sidebarDelegate respondsToSelector:@selector(sideBar:didSelectButton:)] ) {
 		[sidebarDelegate sideBar:self didSelectButton:row];
 	}
+}
+
+-(NSInteger)selectedIndex
+{
+    return [_matrix selectedRow];
 }
 
 @end
 
 #pragma mark -
 #pragma mark ECSideBar(Private)
+
 @implementation EDSideBar(Private)
+
 -(void)moveSelectionImage
 {
 	
@@ -336,8 +372,7 @@
 		[[NSAnimationContext currentContext] setDuration:animationDuration];
 		[[selectorImageView animator] setFrame:imgFrame];
 		
-	}
-	
+	}	
 }
 
 
