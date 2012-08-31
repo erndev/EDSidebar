@@ -53,6 +53,7 @@
 	// Add a bit of noise texture
     sideBarDefault.noiseAlpha=0.04;
     
+    [sideBarDefault setTarget:self withSelector:@selector(logThis:) atIndex:0];
     
 	// Setup sidebar with blackCell (BlackCell)
 	// Buttons centered. Selection is not animated
@@ -78,6 +79,11 @@
 	NSLog(@"Button selected: %lu", button );
 	[textField setStringValue:str];
 	
+}
+
+- (IBAction)logThis:(id)sender
+{
+    NSLog(@"here I am");
 }
 
 @end
