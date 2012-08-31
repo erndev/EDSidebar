@@ -49,6 +49,8 @@ typedef NSUInteger ECSideBarLayoutMode;
 -(void)addButtonWithTitle:(NSString*)title image:(NSImage*)image alternateImage:(NSImage*)alternateImage;
 -(void)setTarget:(id)aTarget withSelector:(SEL)aSelector atIndex:(NSInteger)anIndex;
 -(void)selectButtonAtRow:(NSUInteger)row;
+-(void)selectNext;
+-(void)selectPrev;
 -(void)drawBackground:(NSRect)rect;
 -(void)setSelectionImage:(NSImage*)image;
 -(id)cellForItem:(NSInteger)index;

@@ -338,6 +338,26 @@
 	}
 }
 
+-(void)selectNext
+{
+    NSInteger row = [_matrix selectedRow] + 1;
+    if (row >= [_matrix.cells count])
+        return;
+    
+    [_matrix selectCellAtRow:row column:0];
+    [self buttonClicked:self];
+}
+
+-(void)selectPrev
+{
+    NSInteger row = [_matrix selectedRow] - 1;
+    if (row <= 0)
+        return;
+    
+    [_matrix selectCellAtRow:row column:0];
+    [self buttonClicked:self];
+}
+
 -(NSInteger)selectedIndex
 {
     return [_matrix selectedRow];
