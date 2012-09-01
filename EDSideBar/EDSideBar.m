@@ -327,8 +327,12 @@
     if ([cell isKindOfClass:[ECSideBarButtonCell class]]) {
         ECSideBarButtonCell *ecCell = (ECSideBarButtonCell *) cell;
         
-        if (ecCell.realTarget && ecCell.realAction) {
+        if (ecCell.realTarget && ecCell.realAction &&
+            [ecCell.realTarget respondsToSelector:ecCell.realAction]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [ecCell.realTarget performSelector:ecCell.realAction withObject:self];
+#pragma clang diagnostic pop            
             return;
         }
     }
