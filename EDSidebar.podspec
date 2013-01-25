@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                     EDSideBar is a customizable Sidebar View like those seen in apps like Sparrow or Twitter.
                     DESC
   s.homepage     = "https://github.com/erndev/EDSidebar"
-
+  s.frameworks = 'QuartzCore'
 
   s.author       = { "Ernesto García" => "ernesto@cocoawithchurros.com" }
   s.source       = { :git => "https://github.com/erndev/EDSidebar.git", :tag => s.version.to_s }
