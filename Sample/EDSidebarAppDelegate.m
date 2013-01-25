@@ -84,7 +84,6 @@
 - (IBAction)logThis:(id)sender
 {
     NSLog(@"here I am");
-    [sideBarDefault selectNext];
 }
 
 @end
