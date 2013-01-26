@@ -4,6 +4,19 @@ EDSideBar
 Attemp to create a Sidebar in ObjectiveC/Cocoa like those seen in apps like Sparrow Mail, Twitter or Github for Mac.
 
 
+###Installation
+
+The easiest way to install EDSidebar is via [CocoaPods](http://cocoapods.org). Add this line to your Podfile:
+
+```ruby
+pod 'EDSidebar'
+```
+
+and run `pod install`. 
+
+You can also install it manually by copying to project these two files (localated in EDSideBar directory): EDSidebar.h and EDSidebar.m
+
+
 
 ### Screenshot
 
