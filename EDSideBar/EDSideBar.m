@@ -36,8 +36,13 @@
     [attrTitle addAttribute:NSForegroundColorAttributeName
                       value:textColor
                       range:range];
-    [attrTitle fixAttributesInRange:range];
-    [self setAttributedTitle:attrTitle];
+
+    if (![attrTitle isEqualToAttributedString: [[NSMutableAttributedString alloc]
+                                               initWithAttributedString:[self attributedTitle]]]){
+        [self setAttributedTitle:attrTitle];
+    }
+
+
 #if !__has_feature(objc_arc)
     [attrTitle release];
 #endif
