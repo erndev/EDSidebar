@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "EDSidebar"
   s.platform 	   = :osx
   s.osx.deployment_target = '10.7'
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "Customizable Sidebar for OSX Apps."
   s.description  = <<-DESC
                     EDSideBar is a customizable Sidebar View like those seen in apps like Sparrow or Twitter.
