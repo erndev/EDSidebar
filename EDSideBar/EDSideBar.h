@@ -23,12 +23,11 @@
 - (void)sideBar:(EDSideBar*)tabBar didSelectButton:(NSInteger)index;
 @end
 
-enum {
+typedef NS_ENUM(NSUInteger, ECSideBarLayoutMode) {
 	ECSideBarLayoutTop			= 0,
 	ECSideBarLayoutCenter		= 1,
 	ECSideBarLayoutBottom		= 2,
-};	
-typedef NSUInteger ECSideBarLayoutMode;
+};
 
 @interface EDSideBar : NSView
 {
